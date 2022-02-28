@@ -1,9 +1,9 @@
 <template>
 
     <main>
-        <MyList :films="films"/>
+        <MyList :films="listaFilms"/>
     </main>
-    
+
 </template>
 
 <script>
@@ -13,7 +13,7 @@ import MyList from "../components/MyList.vue"
 export default {
  name: "MyMain",
  props: {
-     'films': Array
+     'listaFilms': Array
      },
  components: {
      MyList

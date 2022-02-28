@@ -29,11 +29,10 @@
         axios.get('https://api.themoviedb.org/3/search/movie?api_key=d16c4fcd5c54c5a0cf763754037eaf73&query=' + keyword +'&language=it-IT')
           .then((response)=> {
             this.listaFilms = response.data.results;
-            console.log(response);
+            console.log(this.listaFilms)
           })
           .catch(function (error) {
-           
-            console.log(error);
+           console.log(error)
           })
           .then(function () {
           

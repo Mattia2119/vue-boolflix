@@ -1,11 +1,9 @@
 <template>
-   <section class="movies-container">
 
-        <ul>
-         <MyCard v-for="(film, index) in films" :key="index" :film="film"/>
-        </ul>
+    <ul>
+        <MyCard v-for="(film, index) in films" :key="index" :film='film'/>
+    </ul>
 
-   </section>
 </template>
 
 <script>
@@ -18,7 +16,7 @@ export default {
         'films': Array
     },
     components: {
-        MyCard
+        MyCard,
     }
 }
 
