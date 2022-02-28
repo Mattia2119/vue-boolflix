@@ -6,18 +6,23 @@
     </div>
 
     <div class="search">
-      <input type="text" placeholder="Cerca il tuo film preferito">
-      <button>Cerca</button>
+      <input type="text" v-model="searchText" placeholder="Cerca il tuo film preferito">
+      <button @click="$emit('search', searchText)">Cerca</button>
     </div>
 
   </header>
 </template>
 
 <script>
-export default {
-  name: 'MyHeader',
- 
-}
+  export default {
+    name: 'MyHeader',
+    data() {
+      return {
+        searchText: ''
+      }
+    }
+  
+  }
 </script>
 
 <style scoped lang="scss">
