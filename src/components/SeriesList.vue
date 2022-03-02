@@ -1,8 +1,8 @@
 <template>
-   <section>
-    <h1>Lista Film</h1>
+  <section>
+      <h1>Lista Serie</h1>
     <ul>
-        <MyCard v-for="(film, index) in films" :key="index" :info='film'/>
+        <MyCard v-for="(serie, index) in series" :key="index" :info='serie'/>
     </ul>
   </section>
 
@@ -13,9 +13,9 @@
 import MyCard from './partials/MyCard.vue';
 
 export default {
-    name: "MyList",
+    name: "SeriesList",
     props: {
-        'films': Array
+        'series': Array
     },
     components: {
         MyCard,
