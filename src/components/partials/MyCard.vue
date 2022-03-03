@@ -8,9 +8,11 @@
         <div>
             <img v-if="languages.includes(info.original_language)" :src="require('../../assets/flags/'+info.original_language+'.png')">
             <span v-else>{{info.original_language}}</span>
-            {{info.original_language}}
         </div>
-        <div>{{info.vote_average}}</div>
+        <div>
+            {{info.vote_average}}
+            <i v-for="i in 5" :key="i" class="fa-star" :class="(i < getStar()) ? 'fa-solid':'fa-regular'"></i>
+        </div>
     </li>
   
 </template>
