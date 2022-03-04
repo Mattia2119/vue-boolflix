@@ -2,7 +2,7 @@
   <header>
 
     <div class="logo">
-      <h2>Boolflix</h2>
+      <a href="#"> <h2>Boolflix</h2> </a>
     </div>
 
     <div class="search">
@@ -30,6 +30,9 @@
 @import "src/assets/commonRules.scss"; 
 
 header {
+  a {
+    text-decoration: none;
+  }
   height: 70px;
   background-color: black;
   display: flex;

@@ -1,7 +1,7 @@
 <template>
 
     <main>
-        <MyList :films="listaFilms"/>
+        <FilmList :films="listaFilms"/>
         <SeriesList :series="series"/>
     </main>
 
@@ -9,7 +9,7 @@
 
 <script>
 
-import MyList from "../components/MyList.vue"
+import FilmList from "../components/FilmList.vue"
 import SeriesList from "../components/SeriesList.vue"
 
 export default {
@@ -20,7 +20,7 @@ export default {
 
      },
  components: {
-     MyList,
+     FilmList,
      SeriesList
  }
 }
@@ -30,6 +30,11 @@ export default {
 <style lang="scss" scoped>
 
 @import "src/assets/commonRules.scss"; 
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
 
 </style>

@@ -1,9 +1,9 @@
 <template>
    <section>
     <h1>Lista Film</h1>
-    <ul>
+    <div class="movie-list">
         <MyCard v-for="(film, index) in films" :key="index" :info='film'/>
-    </ul>
+    </div>
   </section>
 
 </template>
@@ -13,7 +13,7 @@
 import MyCard from './partials/MyCard.vue';
 
 export default {
-    name: "MyList",
+    name: "FilmList",
     props: {
         'films': Array
     },
@@ -26,6 +26,6 @@ export default {
 
 <style lang="scss" scoped>
 
-@import "src/assets/commonRules.scss"; 
+  @import "src/assets/commonRules.scss"; 
 
 </style>

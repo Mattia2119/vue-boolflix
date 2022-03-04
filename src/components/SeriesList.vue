@@ -1,9 +1,9 @@
 <template>
   <section>
       <h1>Lista Serie</h1>
-    <ul>
+    <div class="movie-list">
         <MyCard v-for="(serie, index) in series" :key="index" :info='serie'/>
-    </ul>
+    </div>
   </section>
 
 </template>
